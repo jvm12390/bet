@@ -1,6 +1,5 @@
-﻿gunicorn==23.0.0
-packaging==25.0
 Flask
+gunicorn
 Flask-SQLAlchemy
 Flask-Mail
 email-validator
