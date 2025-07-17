@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}Crear Grupo{% endblock %}
+
+{% block content %}
+<h2>Crear Grupo</h2>
+
+<form method="post" class="mt-4">
+  <div class="mb-3">
+    <label for="name" class="form-label">Nombre del grupo</label>
+    <input type="text" name="name" id="name" class="form-control" required>
+  </div>
+
+  <div class="mb-3">
+    <label for="invite_code" class="form-label">Código de invitación</label>
+    <input type="text" name="invite_code" id="invite_code" class="form-control" required>
+  </div>
+
+  <div class="mb-3">
+    <label for="initial_balance" class="form-label">Dinero ficticio inicial por miembro</label>
+    <input type="number" name="initial_balance" id="initial_balance" class="form-control" min="0" value="10000" required>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Crear grupo</button>
+</form>
+{% endblock %}

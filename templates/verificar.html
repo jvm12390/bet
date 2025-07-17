@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}Verificación{% endblock %}
+{% block content %}
+<h2>Verifica tu correo</h2>
+<p>Hemos enviado un código de 4 dígitos a tu correo. Introdúcelo abajo:</p>
+
+<form method="post" style="max-width: 300px;">
+  <div class="mb-3">
+    <label class="form-label">Código</label>
+    <input type="text" name="codigo" class="form-control" maxlength="4" required>
+  </div>
+  <button type="submit" class="btn btn-primary">Verificar</button>
+</form>
+{% endblock %}
